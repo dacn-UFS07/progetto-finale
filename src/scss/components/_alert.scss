@@ -1,0 +1,15 @@
+.alert {
+    width: 50%; 
+    margin: auto; 
+    margin-bottom: 2%; 
+    display: none;
+    @include xs {
+        width: 90%;
+    }
+    @include sm {
+        width: 90%;
+    }  
+    @include md {
+        width: 90%;
+    }
+}

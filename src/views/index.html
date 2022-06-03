@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/vendors/normalize.min.css">
+    <title>CoinMarket</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">CoinMarket</span>
+  </nav>
+
+  <section class="form-section">
+    <div class="form-container">
+      <form class="form-inline row" id="cryptocurrency_form">
+        <div class="col-9">
+          <input type="text" class="form-control" id="cryptocurrency_name" placeholder="Cryptocurrency name">
+        </div>
+        <div class="col-3">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="alert alert-danger" id="alert-d" role="alert">
+    <button type="button" id="btn-close" class="close" data-dismiss="alert" aria-label="close" style="  all: unset;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+    </button>
+    Avviso: puoi visualizzare sono 4 elementi alla volta!
+  </div>
+
+  <div class="alert alert-warning" id="alert-w" role="alert">
+    <button type="button" id="btn-close-w" class="close" data-dismiss="alert" aria-label="close" style="  all: unset;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+    </button>
+    Avviso: La cryptocurrency inserita è già visibile!
+  </div>
+
+  <div class="container"> 
+    <div class="row">
+    </div>
+  </div>
+  
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html> 
